@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Caixa</title>
+
+        <!-- Custom fonts for this template-->
+        <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+        <!-- Custom styles for this template-->
+        <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    </head>
+
+    <body class="bg-gray-900">
+
+        <div class="container justify-content-center p-3">
+
+            <div class="card o-hidden border-0 mt-4 bg-gradient-warning">
+                <!-- Conteúdo aqui -->
+
+                <div class="row p-3 ml-3 mr-1 mx-auto justify-content-center bg-gray-900">
+                    <!--Coluna 1-->  
+                    <div class="col-md-1 mx-3 bg-gradient-info ">
+                        <!--Linha 1-->
+                        <div class="row  py-3">
+                            <div class="mx-auto text-white">
+                                Logo
+                            </div>
+                            <div class="small font-weight-light text-white mx-auto">
+                                11/10/2019
+                            </div>
+                            <div class="small mx-auto text-white">
+                                16:49
+                            </div>
+                            <div class="mx-auto text-white">
+                                Vitória Silva
+                            </div>
+                            <div class=" small mx-auto text-white">
+                                PDV 1 Ativo
+                            </div>
+                            <div class="mx-auto text-white">
+                                <a href="fav.php"> Sair</a>
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <!--Linha 2-->    
+                        <div class="row py-3">
+                            <div class=" mx-auto text-gray-500">
+                                Procurar
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <!--Linha 3-->    
+                        <div class="row py-3 shadow-sm">
+                            <div class=" mx-auto text-white">
+                                Vender
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <!--Linha 4-->    
+                        <div class="row py-3">
+                            <div class=" mx-auto text-gray-500">
+                                Operações
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Coluna 2-->  
+                    <div class="col justify-content-center bg-white p-3">
+                        <!--Linha1 Nome do Cliente-->
+                        <div class="row mx-3">
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">Cliente: Ariane Santos</div>
+                            <div class="ml-auto"><a href="#"><i class="fas fa-exclamation-triangle text-warning" data-toggle="modal" data-target="#modalCalendario"></i></a></div>
+                        </div>
+                        <!--Linha2 Nome do Vendedor-->
+                        <div class="row mx-3">
+                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Vendedor: Vitória Silva</div>
+                        </div>
+                        <!--Linha3 Botões-->
+                        <div class="row py-2 justify-content-center">
+                            <!--Barra de Pesquisa-->
+                            <form class="d-none d-sm-inline-block form-inline mx-4 my-2 my-md-0 mw-100 navbar-search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control bg-light border-0 small" placeholder="Pesquisar..." aria-label="Search" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search fa-sm"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                            <!--Seleção de Quantidade-->
+                            <div class=" my-2 my-md-0 mw-100">
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Quantidade</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                            <!--Seleção de Funcionario-->
+                            <div class=" my-2 my-md-0 mw-100 mx-4">
+                                <select class="custom-select" id="inputGroupSelect02">
+                                    <option selected>Funcionário</option>
+                                    <option value="1">Gabriella Soares</option>
+                                    <option value="2">Lucia Amaral</option>
+                                    <option value="3">Marina Trindade</option>
+                                    <option value="4">Vanessa Santos</option>
+                                </select>
+                            </div>
+                            <!--Botão Add-->
+                            <a href="#" class="btn btn-success btn-icon-split">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span class="text">Adicionar</span>
+                            </a>
+                            <!--Botão Cancelar-->
+                            <a href="#" class="btn btn-danger btn-icon-split text-white mx-4" data-toggle="modal" data-target="#modalExemplo"> 
+                                <!--type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalExemplo"-->
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-trash"></i>
+                                </span>
+                                <span class="text">Cancelar</span>
+                            </a>
+                        </div>
+                        <!--Linha4-->
+                        <div class="row mx-3 mt-3">
+                            <table class="table table-condensed">
+                                <tr class="active">
+                                    <td class="active">Código</td>
+                                    <td class="success">Nome</td>
+                                    <td class="warning">Quantidade</td>
+                                    <td class="warning">Funcionário</td>
+                                    <td class="danger">Preço</td>
+                                </tr>
+                                <tr class="active">
+                                    <td class="active">001</td>
+                                    <td class="success">Hidratação</td>
+                                    <td class="warning">01</td>
+                                    <td class="warning">Lucia Amaral</td>
+                                    <td class="danger">R$ 80,00</td>
+                                </tr>
+                                <tr class="active">
+                                    <td class="active">007</td>
+                                    <td class="success">Corte</td>
+                                    <td class="warning">01</td>
+                                    <td class="warning">Lucia Amaral</td>
+                                    <td class="danger">R$ 45,00</td>
+                                </tr>
+                                <tr class="active">
+                                    <td class="active">003</td>
+                                    <td class="success">Design de Sobrancelhas</td>
+                                    <td class="warning">01</td>
+                                    <td class="warning">Gabriella Soares</td>
+                                    <td class="danger">R$ 30,00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--Linha5-->
+                        <div class="row justify-content-end mx-3 mt-3">
+                            <div class="col-md-auto px-3 justify-content-end bg-gray-200">
+                                <div class="row text-black-50">
+                                    Subtotal:
+                                </div>
+                                <div class="row text-black-50">
+                                    Descontos:
+                                </div>
+                                <div class="row text-black-50">
+                                    Pagamentos:
+                                </div>
+                            </div>
+
+                            <div class="col-md-auto px-3 justify-content-end bg-gray-200">
+                                <div class="row text-black-50">
+                                    R$ 00,00
+                                </div>
+                                <div class="row text-black-50">
+                                    R$ 00,00
+                                </div>
+                                <div class="row text-black-50">
+                                    R$ 00,00
+                                </div>
+                            </div>
+
+                            <div class="col-auto px-4  justify-content-end bg-gray-200">
+                                <div class="row justify-content-center text-black-50">
+                                    Total
+                                </div>
+                                <div class="row justify-content-center mt-2 h5 mb-0 font-weight-bold text-gray-900">
+                                    R$ 155,00
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end mx-3 pr-3 mt-3 text-white">
+                            <a href="#" class="btn btn-info mx-0 ">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span class="text">Finalizar</span>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!--Coluna 3-->
+                    <!--<div class="col-md-2 bg-danger p-3">
+                    <!--Linha 1
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-6 my-3">
+                            Level 2: .col-xs-8 .col-sm-6
+                        </div>
+                    </div>
+                    <!--Linha 2    
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-6 my-3">
+                            Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                    </div>
+                    <!--Linha 3    
+                    <div class="row">
+                        <div class="col-xs-4 col-sm-6 my-3">
+                            Level 2: .col-xs-4 .col-sm-6
+                        </div>
+                    </div>
+              
+                </div>-->
+
+                </div>
+                <!-- Modal -->
+                
+                <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Cancelar</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Certeza que deseja cancelar?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                                <button type="button" class="btn btn-primary">Salvar mudanças</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade" id="modalCalendario" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="TituloModalCentralizado">Informações sobre o sistema de Caixa</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Essa é a tela de caixa, aqui será feita as ações no PDV.<br>
+                        Na barra lateral terá, informações como: Data/Hora, operador de PDV(ou vendedor), o PDV e sair(te levará para página de acesso rápido).<br>
+                        Procurar: Uma procura direta dos serviços, poderá ser iniciada a venda direto por lá.<br>
+                        Vender: Após abrir o PDV, selecionar o operador e o valor que estará no caixa as vendas poderão ser iniciadas.<br>
+                        Selecionando o Cliente(poderá vender sem selecionar assinando o cliente como "Ao Consumidor").<br>
+                        Na tela principal estará visivel o cliente é o operador do PDV, o sistema de busca encontrará os serviços que serão vendidos, depois a
+                        quantidade, então o funcionário responsável pelo serviço, o botão adicionar irá incluir o item a compra e o cancelar irá cancelar a venda.<br>
+                        Na tabela abaixo serão as informações  de serviço.<br>
+                        Abaixo as informações de valores e o botão de finalização.<br>
+                        Após isso será a tela de recebimento do valor, depois o troco se necessário, com confirmaçãoe então a finalização com a nota fiscal que pode
+                        ou não ser enviado ao e-mail do cliente.<br>
+                        Operações:Uma tela de operações e registro do caixa como: sangria, reforço, fechamento, sincronia e configurações.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/sb-admin-2.min.js"></script>
+
+    </body>
+
+</html>
